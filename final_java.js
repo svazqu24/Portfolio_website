@@ -4,8 +4,6 @@
 var yearSpan = document.getElementById('year');
 var currentYear = new Date().getFullYear();
 
-// changes month
-
 yearSpan.innerHTML = currentYear;
 
 // Changes the month for the copyright
@@ -16,9 +14,6 @@ var months = ['January', 'February', 'March', 'April', 'May', 'June',
 var currentMonth = months[new Date().getMonth()];
 
 monthSpan.innerHTML = currentMonth;
-
-
-
 
 
 // creates typewriter effect for Headers 
