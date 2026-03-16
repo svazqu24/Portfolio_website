@@ -1,4 +1,6 @@
-
+/* =============================================
+   final_style.css — Sam Vazquez Portfolio
+   ============================================= */
 
 
 /* --- Custom Font --- */
@@ -10,7 +12,7 @@
 }
 
 
-
+/* --- Reset & Base --- */
 html {
     scroll-behavior: smooth;
 }
@@ -24,7 +26,7 @@ body {
 }
 
 
-
+/* --- Container --- */
 .container {
     width: 100%;
     max-width: 1200px;
@@ -32,7 +34,9 @@ body {
 }
 
 
-
+/* =============================================
+   NAVIGATION
+   ============================================= */
 nav {
     background-color: #2e2e36;
     display: flex;
@@ -73,7 +77,9 @@ nav a.active {
 }
 
 
-
+/* =============================================
+   HEADER / HERO
+   ============================================= */
 header {
     width: 100%;
     min-height: 700px;
@@ -130,6 +136,9 @@ header h1::after {
 }
 
 
+/* =============================================
+   MAIN LAYOUT
+   ============================================= */
 main {
     display: flex;
     flex-direction: row;
@@ -148,7 +157,9 @@ article {
 }
 
 
-
+/* =============================================
+   TYPOGRAPHY
+   ============================================= */
 h2 {
     font-family: "CormorantGaramond", Georgia, serif;
     font-size: 38px;
@@ -187,6 +198,68 @@ a:hover {
 }
 
 
+/* =============================================
+   PULL QUOTE
+   ============================================= */
+.pullquote {
+    border-left: 3px solid #e07068;
+    margin: 32px 0;
+    padding: 16px 24px;
+    background-color: #26262c;
+    border-radius: 0 4px 4px 0;
+    font-family: "CormorantGaramond", Georgia, serif;
+    font-size: 22px;
+    font-style: italic;
+    color: #f0ece8;
+    line-height: 1.6;
+}
+
+.quote-author {
+    display: block;
+    margin-top: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #e07068;
+}
+
+
+/* =============================================
+   IMAGE CARD
+   ============================================= */
+.image-card {
+    float: right;
+    margin: 0 0 16px 24px;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.image-card img {
+    display: block;
+    width: 280px;
+    height: 170px;
+    border-radius: 2px;
+}
+
+
+/* =============================================
+   IMAGES (general)
+   ============================================= */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+
+/* =============================================
+   FOOTER
+   ============================================= */
 
 /* inspired by https://html5up.net/escape-velocity */
 footer {
@@ -250,18 +323,16 @@ footer .copyright {
 }
 
 
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-
-
+/* =============================================
+   UTILITY
+   ============================================= */
 .divider {
     width: 40px;
     height: 2px;
     background-color: #e07068;
     margin: 24px 0;
+}
+
+.clearfix {
+    clear: both;
 }
